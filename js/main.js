@@ -25,17 +25,33 @@ let ticket = priceKilometers*kilometers;
 let offTwenty = priceKilometers/100*20;
 let offTwentyticket = offTwenty*kilometers;
 
+let offForty = priceKilometers/100*40;
+let offFortyticket = offForty*kilometers;
+
+//4. elaborazione codice 
+
 if(clientAge>18 && clientAge<65){
       
     ticket = priceKilometers*kilometers;
    
-console.log(ticket);
-} else if(clientAge<18){
+
+}console.log(ticket);
+
+else if(clientAge<=18){
     
     offTwentyticket = offTwenty*kilometers;
+    
+} console.log(offTwentyticket);
 
-} 
+else if(clientAge>=65){
 
-console.log(offTwentyticket);
+    offFortyticket = offForty*kilometers;
+
+    
+
+}console.log(offFortyticket);
+    
+
+
 
 
