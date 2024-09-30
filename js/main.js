@@ -5,6 +5,7 @@
 const priceKilometers = 0.21;
 let clientAge;
 let kilomters;
+let ticket = clientAge*kilomters;
 
 //2.raccolta dati
 
@@ -13,6 +14,7 @@ kilometers = prompt("Quanti chilometri devi percorrere?");
 
 console.log(clientAge);
 console.log(kilometers);
+
 
 
 //3. elaborazione del codice
