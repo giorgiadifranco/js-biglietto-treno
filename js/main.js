@@ -22,35 +22,41 @@ console.log(kilometers);
 //calcolo del ticket
 //default
 let ticket = priceKilometers*kilometers;
+let ticketFixed = ticket.toFixed(2);
 
 //-20%
 let offTwenty = priceKilometers/100*20;
 let offTwentyticket = offTwenty*kilometers;
+let tewntyFixed = offTwentyticket.toFixed(2);
 
 //-40%
 let offForty = priceKilometers/100*40;
 let offFortyticket = offForty*kilometers;
+let fortyFixed = offFortyticket.toFixed(2);
 let message = "il prezzo totale del biglietto è €";
 
 //4. elaborazione codice 
 
 if(clientAge){
       
-    ticket = priceKilometers*kilometers;
+    //ticket = priceKilometers*kilometers;
+    ticketFixed = ticket.toFixed(2);
     message = "il prezzo totale del biglietto è €"
-   console.log(`${message}${ticket}`)
+   console.log(`${message}${ticketFixed}`)
 
 }else if(clientAge<=18){
     
-    offTwentyticket = offTwenty*kilometers;
+    //offTwentyticket = offTwenty*kilometers;
+    tewntyFixed = offTwentyticket.toFixed(2);
     message = "il prezzo totale del biglietto è €"
-    console.log(`${message}${offTwentyticket}`);
+    console.log(`${message}${tewntyFixed}`);
 }else if(clientAge>=65){
 
-    offFortyticket = offForty*kilometers;
+    //offFortyticket = offForty*kilometers;
+    fortyFixed = offFortyticket.toFixed(2);
     message = "il prezzo totale del biglietto è ";
     
-    console.log(`${message}${offFortyticket}`);
+    console.log(`${message}${fortyFixed}`);
 }
 
 
