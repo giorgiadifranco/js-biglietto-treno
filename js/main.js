@@ -7,21 +7,25 @@ let clientAge;
 let clientOfftwenty = 18;
 let clientOffforty = 65;
 let kilometers;
-//let ticket = priceKilometers*kilometers;
+
 
 
 clientAge = prompt("Età"); //il dato in input sarà una stringa da convertire in un valore
-clientAge = parseFloat(clientAge);
+clientAge = parseInt(clientAge);
 kilometers = prompt("Quanti chilometri devi percorrere?");
 kilometers =parseFloat(kilometers)
 
 console.log(clientAge);
 console.log(kilometers);
 
-if(clientAge>clientOfftwenty ){
+//calcolo del ticket
+
+let ticket = priceKilometers*kilometers;
+
+if(clientAge>18){
       
-    let ticket = priceKilometers*kilometers;
+    ticket = priceKilometers*kilometers;
    
 
-}console.log(ticket);
+} console.log(ticket);
 
