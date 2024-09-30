@@ -22,10 +22,20 @@ console.log(kilometers);
 
 let ticket = priceKilometers*kilometers;
 
-if(clientAge>18){
+let offTwenty = priceKilometers/100*20;
+let offTwentyticket = offTwenty*kilometers;
+
+if(clientAge>18 && clientAge<65){
       
     ticket = priceKilometers*kilometers;
    
+console.log(ticket);
+} else if(clientAge<18){
+    
+    offTwentyticket = offTwenty*kilometers;
 
-} console.log(ticket);
+} 
+
+console.log(offTwentyticket);
+
 
