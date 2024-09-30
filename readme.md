@@ -3,6 +3,9 @@ Il programma dovrà chiedere all'utente il numero di chilometri che vuole percor
         - età;  
         - chilometri da percorrere;
         - prezzo al km;
+        - >60 y; ?
+        - <18y; ?
+
 
 Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
 
